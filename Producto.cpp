@@ -5,4 +5,5 @@ Producto :: Producto(string n, int s){
 	stock = s;
 	
 	hola mundo;
+	hi;
 }
