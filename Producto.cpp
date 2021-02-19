@@ -6,6 +6,9 @@ Producto :: Producto(string n, int s){
 	
 	hola mundo;
 	hi;
+<<<<<<< HEAD
 	cliente::cliente(string p , int v)
 	
+=======
+>>>>>>> parent of c13cca9 (Update Producto.cpp)
 }
