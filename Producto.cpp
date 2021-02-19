@@ -6,4 +6,5 @@ Producto :: Producto(string n, int s){
 	
 	hola mundo;
 	hi;
+	cliente::cliente(string p , int v)
 }
