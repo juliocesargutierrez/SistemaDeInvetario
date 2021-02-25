@@ -9,6 +9,10 @@ class Producto
 	private:
 		string nombre;
 		int stock;
+		
+		cout<<"Ingrese producto: ";
+		
+		cout<<"ingrese datos: ";
 };
 
 #endif
