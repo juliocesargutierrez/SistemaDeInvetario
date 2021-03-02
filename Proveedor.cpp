@@ -3,3 +3,4 @@
 Proveedor::Proveedor()
 {
 }
+#include "Proveedor.h"
