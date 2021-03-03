@@ -1,6 +1,8 @@
 #ifndef VENTA_H
 #define VENTA_H
 
+using namespace std;
+
 class Venta
 {
 	private:
@@ -8,7 +10,6 @@ class Venta
 	public:
 		Venta(int);
 		
-	protected:
 };
 
 #endif

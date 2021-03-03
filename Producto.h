@@ -1,18 +1,22 @@
 #ifndef PRODUCTO_H
 #define PRODUCTO_H
+
 #include<string>
+#include<iostream>
 using namespace std;
+
 class Producto
-{
-	public:
-		Producto (string, int);
+{	
 	private:
 		string nombre;
-		int stock;
+		int precio;
 		
-		cout<<"Ingrese producto: ";
-		
-		cout<<"ingrese datos: ";
+	public:
+		Producto (string, int);
+		string getnombre();
+		int getprecio();
+		virtual void mostrarDatos();
+	
 };
 
 #endif
