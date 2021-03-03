@@ -104,3 +104,45 @@ void cliente::mostrar(){
 	cout<<"\t	"<<ruc;
 	cout<<"\t	"<<telefono<<endl;
 }
+
+class proovedor:public facturacion{
+	private:
+		int ruc;
+		int telefono;
+		char direccion[20];
+	public:
+		void registrar();
+		void modificar();
+		void ordenar();
+		void buscar();
+		void exportar();
+		void mostrar();
+};
+void proovedor::registrar(){
+	cout<<"Codigo del proovedor	: ";cin>>codigo;
+	cout<<"Nombre del proovedor	: ";cin>>nombre;
+	cout<<"RUC			: ";cin>>ruc;
+	cout<<"Telefono		: ";cin>>telefono;
+	cout<<"Direccion 		: ";cin>>direccion;
+}
+void proovedor::mostrar(){
+	
+		cout<<"	"<<codigo;
+		cout<<"\t\t"<<nombre;
+		cout<<"\t	"<<ruc;
+		cout<<"\t	"<<telefono;
+		cout<<"\t	"<<direccion<<endl;
+}
+
+void proovedor::exportar(){
+	ofstream archivo3;
+	archivo3.open("proovedores.txt",ios::app);
+	
+	archivo3<<"	"<<codigo;
+	archivo3<<"\t\t"<<nombre;
+	archivo3<<"\t	"<<ruc;
+	archivo3<<"\t	"<<telefono;
+	archivo3<<"\t	"<<direccion<<endl;
+	
+	archivo3.close();
+}
