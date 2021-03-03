@@ -143,3 +143,88 @@ void proovedor::exportar(){
 	
 	archivo3.close();
 }
+
+int main(){
+	int op,op2,op3,op4;						 
+	int np=0;						
+	int nc=0;						
+	int npr=0;					
+	producto listaprod[20];
+	cliente listacli[20];
+	proovedor listaproo[20];
+	
+	do{
+		system("CLS");    
+		cout<<"\n            ===========================================================";
+        cout<<"\n                            SISTEMA PARA UNA BODEGA ";
+        cout<<"\n            ===========================================================";
+        cout<<"\n                    Bodega de Don Juan";
+        cout<<"\n                    Version de Sistema 1.0";
+        cout<<"\n                    Empresa creadora del sitema : JCPC";
+        cout<<"\n\n\n                MENU DE OPCIONES"<<endl;
+        cout<<"                   1. Productos"<<endl;
+        cout<<"                   2. Clientes"<<endl;
+        cout<<"                   3. Proovedores"<<endl;
+        cout<<"                   0. Salir"<<endl<<endl;
+        cout<<"Selecciones una opcion : "; cin>>op;
+        cout<<endl;
+        switch(op){
+        	case 1:
+        		do{
+			        system("CLS");   
+					 
+					cout<<"\n            ===========================================================";
+			        cout<<"\n                          SISTEMA PARA UNA BODEGA";
+			        cout<<"\n            ===========================================================";
+			        cout<<"\n                    Bodega Don Juan";
+			        cout<<"\n                    Version de Sistema 1.0";
+			        cout<<"\n                    Empresa creadora del sitema : JCPC";
+			        cout<<"\n\n\n                MENU DE OPCIONES"<<endl;
+			        cout<<"                   1. Agregar Productos"<<endl;
+			        cout<<"                   2. Mostrar Lista de productos"<<endl;
+			        cout<<"                   3. Ordenar Productos por codigo"<<endl;
+			        cout<<"                   4. Exportar Lista de productos"<<endl;
+			        cout<<"                   5. Buscar productos por nombre"<<endl;
+			        cout<<"                   0. Salir"<<endl<<endl;
+			        cout<<"Selecciones una opcion : "; cin>>op2;	
+			        switch(op2){
+			        	case 1:
+			        		listaprod[np].registrar();
+			        		np=np+1;
+			        		cout<<endl<<"Registro exitoso!"<<endl;
+		        			break;
+		        		case 2:
+		        			cout<<"\n\t\tLISTA DE PRODUCTOS";
+			        		cout<<"\n\n	Codigo		Nombre		Cantidad	Categoria	Precio	      Proovedor"<<endl;
+			        		
+			        		for(int i=0; i<np;i++){
+			        			listaprod[i].mostrar();
+							}
+							system("pause");
+		        			break;
+		        		case 3:
+		        			
+		        			break;
+		        		case 4:
+		        			for(int i=0;i<np;i++){
+			        			cout<<i+1;
+			        			listaprod[i].exportar();
+							}
+							cout<<"Se exporto correctamente ";					
+			        		system("pause");
+		        			break;
+		        			case 5:
+		        				break;
+		        		case 0:
+		        			cout<<"Hasta pronto!"<<endl;
+		        			system("pause");
+		        			break;
+					}
+				}
+				while(op2 !=0);
+				system("pause");
+        		break;
+        	}
+        }
+    }
+
