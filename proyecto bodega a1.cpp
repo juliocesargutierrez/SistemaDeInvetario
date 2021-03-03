@@ -1,9 +1,6 @@
 #include <iostream>//libreria
 #include <fstream>
 
-
-
-
 using namespace std;
 
 
