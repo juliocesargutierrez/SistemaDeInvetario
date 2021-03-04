@@ -11,9 +11,7 @@ class facturacion{ //clase principal
 	private:
 		void registrar();
 		void modificar();
-		void ordenar();
-		void buscar();
-		void exportar();
+	    void exportar();
 		void mostrar();
 	
 };
@@ -26,8 +24,6 @@ class producto:public facturacion{ // producto hereda de facturación: nombre y c
 	public:
 		void registrar();
 		void modificar();
-		void ordenar();
-		void buscar();
 		void exportar();
 		void mostrar();
 };
@@ -49,12 +45,9 @@ void producto::mostrar(){
 	cout<<"\t	"<<precio;
 	cout<<"\t	"<<proovedor<<endl;
 }
-void producto::ordenar(){
+
 	
-}
-void producto::buscar(){
-	
-}
+
 void producto::exportar(){
 	
 	ofstream archivo1;
@@ -79,8 +72,6 @@ class cliente:public facturacion{// hereda nombre y codigo de factracion
 	public:
 		void registrar();
 		void modificar();
-		void ordenar();
-		void buscar();
 		void exportar();
 		void mostrar();		
 };
@@ -110,8 +101,6 @@ class proovedor:public facturacion{
 	public:
 		void registrar();
 		void modificar();
-		void ordenar();
-		void buscar();
 		void exportar();
 		void mostrar();
 };
@@ -182,9 +171,7 @@ int main(){
 			        cout<<"\n\n\n                MENU DE OPCIONES"<<endl;
 			        cout<<"                   1. Agregar Productos"<<endl;
 			        cout<<"                   2. Mostrar Lista de productos"<<endl;
-			        cout<<"                   3. Ordenar Productos por codigo"<<endl;
-			        cout<<"                   4. Exportar Lista de productos"<<endl;
-			        cout<<"                   5. Buscar productos por nombre"<<endl;
+			       	cout<<"                   3. Exportar Lista de productos"<<endl;
 			        cout<<"                   0. Salir"<<endl<<endl;
 			        cout<<"Selecciones una opcion : "; cin>>op2;	
 			        switch(op2){
@@ -202,10 +189,8 @@ int main(){
 							}
 							system("pause");
 		        			break;
+		        		
 		        		case 3:
-		        			
-		        			break;
-		        		case 4:
 		        			for(int i=0;i<np;i++){
 			        			cout<<i+1;
 			        			listaprod[i].exportar();
@@ -213,8 +198,6 @@ int main(){
 							cout<<"Se exporto correctamente ";					
 			        		system("pause");
 		        			break;
-		        			case 5:
-		        				break;
 		        		case 0:
 		        			cout<<"Hasta pronto!"<<endl;
 		        			system("pause");
@@ -224,7 +207,116 @@ int main(){
 				while(op2 !=0);
 				system("pause");
         		break;
-        	}
-        }
-    }
+        	case 2:
+        		do{
+			        system("CLS");   
+					 
+					cout<<"\n            ===========================================================";
+			        cout<<"\n                      SISTEMA  PARA UNA BODEGA";
+			        cout<<"\n            ===========================================================";
+			        cout<<"\n                    Bodega Don Juan";
+			        cout<<"\n                    Version de Sistema 1.0";
+			        cout<<"\n                    Empresa creadora del sitema : JCPC";
+			        cout<<"\n\n\n                MENU DE OPCIONES"<<endl;
+			        cout<<"                   1. Agregar clientes"<<endl;
+			        cout<<"                   2. Mostrar Lista de clientes"<<endl;
+			        cout<<"                   3. Exportar Lista de clientes"<<endl;
+			        cout<<"                   0. Salir"<<endl<<endl;
+			        cout<<"Selecciones una opcion : "; cin>>op3;
+					
+					switch(op3){
+						case 1:
+							listacli[nc].registrar();
+        					nc=nc+1;
+        					cout<<endl<<"Registro exitoso!"<<endl;
+							break;
+						case 2:
+							cout<<"\n\t\tLISTA DE CLIENTES";
+			        		cout<<"\n\n	Codigo		Nombre		Apellido	Dni		Ruc		Telefono"<<endl;
+			        		
+			        		for(int i=0;i<nc;i++){
+			        			listacli[i].mostrar();
+							}
+							system("pause");
+							break;
+						case 3:
+							for(int i=0;i<nc;i++){
+			        			cout<<i+1;
+			        			listacli[i].exportar();
+							}
+							cout<<"Se exporto correctamente ";					
+			        		system("pause");
+							break;
+							
+						case 0:
+							cout<<"Hasta pronto!"<<endl;
+		        			system("pause");
+							break;
+					}
+				}
+				while(op3 !=0);
+				system("pause");
+        		break;
+        	case 3:
+        		do{
+			        system("CLS");   
+						 
+					cout<<"\n            ===========================================================";
+			        cout<<"\n                      SISTEMA PARA UNA BODEGA";
+			        cout<<"\n            ===========================================================";
+			        cout<<"\n                    Bodega Don Juan";
+			        cout<<"\n                    Version de Sistema 1.0";
+			        cout<<"\n                    Empresa creadora del sitema : JCPC";
+			        cout<<"\n\n\n                MENU DE OPCIONES"<<endl;
+			        cout<<"                   1. Agregar proovedor"<<endl;
+			        cout<<"                   2. Mostrar proveedor "<<endl;
+			        cout<<"                   3. Exportar Lista de proovedores"<<endl;
+				    cout<<"                   0. Salir"<<endl<<endl;
+				    cout<<"Selecciones una opcion : "; cin>>op4;
+					
+					switch(op4){
+						case 1:
+							listaproo[npr].registrar();
+        					npr=npr+1;
+        					cout<<endl<<"Registro exitoso!"<<endl;
+							break;
+						case 2:
+							cout<<"\n\t\tLISTA DE PROVEEDORES";
+			        		cout<<"\n\nN.	Codigo		Nombre		Ruc		Telefono	Direccion"<<endl;
+			        		
+			        		for(int i=0;i<npr;i++){
+			        			cout<<i+1;
+			        			listaproo[i].mostrar();
+							}
+							system("pause");
+							break;
+						case 3:
+							for(int i=0;i<npr;i++){
+        						cout<<i+1;
+        						listaproo[i].exportar();
+							}
+							cout<<"Se exporto correctamente ";					
+        					system("pause");
+							break;
+						case 0:
+							cout<<"Hasta pronto!"<<endl;
+		        			system("pause");
+							break;
+					}	
+				}
+				while(op4 !=0);
+				system("pause");
+        		break;
+        	case 0:
+        		cout<<"Hasta pronto!"<<endl;
+        		system("pause");
+        		break;
+		}
+	}
+	while(op !=0);
+ 
+ return 0;
+ 	
+}
+        
 
