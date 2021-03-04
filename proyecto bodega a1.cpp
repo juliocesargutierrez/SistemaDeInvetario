@@ -195,7 +195,7 @@ int main(){
 		        			break;
 		        		case 2:
 		        			cout<<"\n\t\tLISTA DE PRODUCTOS";
-			        		cout<<"\n\n	Codigo		Nombre		Cantidad	Categoria	Precio	      Proovedor"<<endl;
+			        		cout<<"\n\n	Codigo		Nombre		Cantidad	Categoria 	Precio	      Proovedor"<<endl;
 			        		
 			        		for(int i=0; i<np;i++){
 			        			listaprod[i].mostrar();
