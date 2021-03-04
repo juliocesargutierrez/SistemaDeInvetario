@@ -165,7 +165,7 @@ int main(){
 					cout<<"\n            =================================================================";
 			        cout<<"\n                            ||    SISTEMA PARA UNA BODEGA    ||";
 			        cout<<"\n            =================================================================";
-			        cout<<"\n                    Bodega de Don Juan";
+			        cout<<"\n                    Mi Bodega";
 			        cout<<"\n                    Version de Sistema 1.0";
 			        cout<<"\n                    Empresa creadora del sitema : J y J";
 			        cout<<"\n\n\n                MENU DE OPCIONES"<<endl;
@@ -214,7 +214,7 @@ int main(){
 				cout<<"\n            =================================================================";
 		        cout<<"\n                            ||    SISTEMA PARA UNA BODEGA    ||";
 		        cout<<"\n            =================================================================";
-		        cout<<"\n                    Bodega de Don Juan";
+		        cout<<"\n                    Mi Bodega";
 		        cout<<"\n                    Version de Sistema 1.0";
 		        cout<<"\n                    Empresa creadora del sitema : J y J";
 			        cout<<"\n\n\n                MENU DE OPCIONES"<<endl;
@@ -264,7 +264,7 @@ int main(){
 					cout<<"\n            =================================================================";
 			        cout<<"\n                            ||    SISTEMA PARA UNA BODEGA    ||";
 			        cout<<"\n            =================================================================";
-			        cout<<"\n                    Bodega de Don Juan";
+			        cout<<"\n                    Mi Bodega";
 			        cout<<"\n                    Version de Sistema 1.0";
 			        cout<<"\n                    Empresa creadora del sitema : J y J";
 			        cout<<"\n\n\n                MENU DE OPCIONES"<<endl;
