@@ -144,12 +144,12 @@ int main(){
 	
 	do{
 		system("CLS");    
-		cout<<"\n            ===========================================================";
-        cout<<"\n                            SISTEMA PARA UNA BODEGA ";
-        cout<<"\n            ===========================================================";
+		cout<<"\n            =================================================================";
+        cout<<"\n                            ||    SISTEMA PARA UNA BODEGA    ||";
+        cout<<"\n            =================================================================";
         cout<<"\n                    Bodega de Don Juan";
         cout<<"\n                    Version de Sistema 1.0";
-        cout<<"\n                    Empresa creadora del sitema : JCPC";
+        cout<<"\n                    Empresa creadora del sitema : J y J";
         cout<<"\n\n\n                MENU DE OPCIONES"<<endl;
         cout<<"                   1. Productos"<<endl;
         cout<<"                   2. Clientes"<<endl;
@@ -162,12 +162,12 @@ int main(){
         		do{
 			        system("CLS");   
 					 
-					cout<<"\n            ===========================================================";
-			        cout<<"\n                          SISTEMA PARA UNA BODEGA";
-			        cout<<"\n            ===========================================================";
-			        cout<<"\n                    Bodega Don Juan";
+					cout<<"\n            =================================================================";
+			        cout<<"\n                            ||    SISTEMA PARA UNA BODEGA    ||";
+			        cout<<"\n            =================================================================";
+			        cout<<"\n                    Bodega de Don Juan";
 			        cout<<"\n                    Version de Sistema 1.0";
-			        cout<<"\n                    Empresa creadora del sitema : JCPC";
+			        cout<<"\n                    Empresa creadora del sitema : J y J";
 			        cout<<"\n\n\n                MENU DE OPCIONES"<<endl;
 			        cout<<"                   1. Agregar Productos"<<endl;
 			        cout<<"                   2. Mostrar Lista de productos"<<endl;
@@ -182,7 +182,7 @@ int main(){
 		        			break;
 		        		case 2:
 		        			cout<<"\n\t\tLISTA DE PRODUCTOS";
-			        		cout<<"\n\n	Codigo		Nombre		Cantidad	Categoria 	Precio	      Proovedor"<<endl;
+			        		cout<<"\n\n	Codigo		Nombre		Cantidad	Categoria   	Precio	      Proovedor"<<endl;
 			        		
 			        		for(int i=0; i<np;i++){
 			        			listaprod[i].mostrar();
@@ -211,12 +211,12 @@ int main(){
         		do{
 			        system("CLS");   
 					 
-					cout<<"\n            ===========================================================";
-			        cout<<"\n                      SISTEMA  PARA UNA BODEGA";
-			        cout<<"\n            ===========================================================";
-			        cout<<"\n                    Bodega Don Juan";
-			        cout<<"\n                    Version de Sistema 1.0";
-			        cout<<"\n                    Empresa creadora del sitema : JCPC";
+				cout<<"\n            =================================================================";
+		        cout<<"\n                            ||    SISTEMA PARA UNA BODEGA    ||";
+		        cout<<"\n            =================================================================";
+		        cout<<"\n                    Bodega de Don Juan";
+		        cout<<"\n                    Version de Sistema 1.0";
+		        cout<<"\n                    Empresa creadora del sitema : J y J";
 			        cout<<"\n\n\n                MENU DE OPCIONES"<<endl;
 			        cout<<"                   1. Agregar clientes"<<endl;
 			        cout<<"                   2. Mostrar Lista de clientes"<<endl;
@@ -249,7 +249,7 @@ int main(){
 							break;
 							
 						case 0:
-							cout<<"Hasta pronto!"<<endl;
+							cout<<"Exitos!"<<endl;
 		        			system("pause");
 							break;
 					}
@@ -261,12 +261,12 @@ int main(){
         		do{
 			        system("CLS");   
 						 
-					cout<<"\n            ===========================================================";
-			        cout<<"\n                      SISTEMA PARA UNA BODEGA";
-			        cout<<"\n            ===========================================================";
-			        cout<<"\n                    Bodega Don Juan";
+					cout<<"\n            =================================================================";
+			        cout<<"\n                            ||    SISTEMA PARA UNA BODEGA    ||";
+			        cout<<"\n            =================================================================";
+			        cout<<"\n                    Bodega de Don Juan";
 			        cout<<"\n                    Version de Sistema 1.0";
-			        cout<<"\n                    Empresa creadora del sitema : JCPC";
+			        cout<<"\n                    Empresa creadora del sitema : J y J";
 			        cout<<"\n\n\n                MENU DE OPCIONES"<<endl;
 			        cout<<"                   1. Agregar proovedor"<<endl;
 			        cout<<"                   2. Mostrar proveedor "<<endl;
@@ -299,7 +299,7 @@ int main(){
         					system("pause");
 							break;
 						case 0:
-							cout<<"Hasta pronto!"<<endl;
+							cout<<"Exitos!"<<endl;
 		        			system("pause");
 							break;
 					}	
